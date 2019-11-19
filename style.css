@@ -1,0 +1,611 @@
+/*
+ Theme Name:     大村印刷2020
+ Description:    大村印刷の専用テーマv
+ Version:        1.0.0
+ */
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: 100%;
+}
+html{
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	color: #252525;
+	font-family:Arial,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	letter-spacing:0.1em;
+	position: relative;
+	overflow-anchor: none;
+}
+img {
+	max-width: 100%;
+}
+a, img {
+	border: 0;
+}
+a {
+	color: #112d55;
+}
+h1,h2,h3,h4,h5 {
+	margin:0;
+	padding:0;
+}
+ul,li {
+	margin:0;
+	padding:0;
+}
+p {
+font-size: 16px;
+}
+.cl{
+	clear:both;
+	margin:0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	opacity: 0;
+	border-width: 0;
+}
+.alignleft {
+	float: left;
+	margin:0 15px 15px 0;
+}
+.alignright {
+	float: right;
+	margin:0 0 15px 15px;
+}
+.fadeindown {
+    opacity: 0;
+}
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:0.7s;
+ -ms-animation-duration:0.7s;
+ animation-duration:0.7s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+ animation-delay: 0s;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-8px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-8px); -ms-transform: translateY(-8px); transform: translateY(-8px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+/***　ヘッダー　***/
+header {
+	width: 100%;
+}
+header .inner{
+	min-width: 1000px;
+	padding: 80px 40px 20px;;
+	margin: 0 auto;
+}
+#nav {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+#nav li {
+padding: 0 20px;
+}
+#nav li:first-child{
+margin-top: 0;
+margin-right: auto;
+padding: 0;
+}
+#nav li:first-child a{
+border: none !important;
+padding: 0 !important;
+}
+#nav li:first-child img {
+margin-top: -30px
+}
+#nav li a {
+text-decoration: none;
+font-size: 14px;
+font-weight: bold;
+display: block;
+padding-bottom: 20px
+}
+#nav li a.active,#nav li a:hover {
+color: #0162b3;
+border-bottom: solid 4px #0162b3;
+padding-bottom: 16px;
+-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+/*** メインビジュアル ***/
+#mainvisual {
+	height: 80vh;
+	background-image: url(images/mainvisual.jpg);
+	background-size: cover;
+	text-align: center;
+}
+#mainvisual h2 {
+font-size: 18px;
+color: #0162b3;
+background: #fff;
+display: inline-block;
+padding: 30px 40px;
+text-align: center;
+margin-top: 40vh;
+letter-spacing: 6px;
+}
+
+/*** 大村印刷の使命 ***/
+.top-msg {
+padding: 130px 0 120px;
+margin: auto;
+text-align: center;
+}
+.top-msg h3 {
+font-size: 20px;
+margin-bottom: 50px
+}
+#content .inner {
+background-color:#fff; 
+width: 940px;
+margin: 0 auto 80px;
+}
+#content h2 {
+color:#0162b3;
+font-size: 30px;
+letter-spacing: 5px;
+margin-bottom: 40px;
+}
+#content h2 span {
+font-size: 16px;
+display: block;
+font-weight: normal;
+line-height: 30px;
+}
+.top-msg p {
+width: 500px;
+margin: auto;
+}
+
+/*** work ***/
+#work {
+text-align: center;
+}
+#work a {
+text-decoration: none;
+}
+#work section {
+background-size: cover;
+padding: 0 5% 0 0;
+margin: 2px 0 0;
+display: inline-block;
+width: 95%;
+height: 400px;
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+#work section article {
+color:#fff;
+display: block;
+display: flex;
+align-items: center;
+z-index: 10;
+padding: 30px;
+}
+#work section article h3 {
+font-size: 60px;
+font-weight: normal;
+text-align: center;
+margin-right: 80px;
+width:100px;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#work section article h3 span {
+font-size: 12px;
+display: block;
+}
+#work section article p {
+width: 350px;
+text-align: left;
+line-height: 30px;
+}
+#work section:before {
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(1,98,179,0.6);
+}
+/*
+#work section:hover article {
+background:rgba(0,0,0,0.6);
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+*/
+#work section:hover article h3{
+font-size: 74px;
+}
+/*
+#work section:hover:before {
+opacity: 0;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+*/
+#work section article p span {
+display: inline-block;
+padding: 3px 30px;
+border: solid 1px #fff;
+margin-top:10px;
+font-size:14px;
+border-radius: 100px;
+color: #fff;
+font-weight: bold;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#work section:hover article p span {
+background: #fff;
+color: #0162b3;
+font-weight: bold;
+}  
+
+
+.communication {
+	background-image: url(images/work01.jpg);
+	background-position: center -380px;
+}
+
+.creative {
+	background-image: url(images/work02.jpg);
+	background-position: center -400px;
+}
+
+.confidence {
+	background-image: url(images/work03.jpg);
+	background-position: center -600px;
+}
+
+.btn {
+	background: #000;
+	padding: 15px 100px;
+	margin: 30px 0;
+	border-radius: 100px;
+	font-size: 16px;
+	color: #fff;
+	display: inline-block;
+	background: linear-gradient(to right, #009be8, #0162b3);
+	letter-spacing: 5px;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.btn:hover{
+opacity: 0.7;
+
+}
+
+/*** 企業情報 ***/
+#relation {
+display: flex;
+align-items: center;
+}
+#relation a {
+display: flex;
+width: 100%;
+text-decoration: none;
+}
+#relation section {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 300px;
+background-size: cover;
+width: 100%;
+text-align: center;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#relation a:hover section {
+opacity:0.9;
+}
+#relation .about {
+	background-image: url(images/company01.jpg);
+}
+#relation .office {
+	background-image: url(images/company02.jpg);
+	margin: 0 3px;
+}
+#relation .history {
+	background-image: url(images/company03.jpg);
+}
+#relation a:hover h3 {
+font-size: 28px;
+}
+#relation section h3 {
+font-size: 24px;
+margin: auto;
+color: #fff;
+letter-spacing: 5px;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#relation section h3 span {
+display: block;
+font-size: 15px;
+font-weight: normal;
+}
+
+/*** 新着情報 ***/
+#news {
+width: 940px;
+margin: 100px auto;
+}
+#news ul {
+list-style: none;
+}
+#news ul li a {
+font-size: 16px;
+padding: 20px 0;
+border-bottom:dotted 1px;
+text-decoration: none;
+display: block;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#news ul li a:hover {
+opacity:0.6;
+}
+#news ul li a span {
+color:#0162b3;
+margin-right: 50px;
+}
+
+/*** バナーエリア ***/
+#bnr {
+width: 100%;
+	margin: 50px auto 0;
+	text-align: center;
+}
+#bnr ul {
+display: flex;
+align-items: center;
+list-style: none;
+justify-content: center;
+}
+#bnr ul li {
+margin-right: 2px;
+}
+#bnr ul li img:hover {
+opacity:0.6;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/*** お問い合わせ ***/
+#contact {
+padding-top:100px;
+}
+#contact .btn {
+padding:25px 80px;
+font-size: 18px;
+margin: 50px auto;
+}
+#contact p strong{
+font-size: 22px;
+line-height: 60px;
+}
+
+/*** フッター ***/
+footer {
+background: #f0f0f0;
+}
+footer .inner {
+width: 1000px;
+display: flex;
+margin: auto;
+padding: 50px 0;
+justify-content:space-between;
+}
+footer .inner section h3 {
+font-size: 23px;
+}
+footer .inner section p{
+font-size: 12px;
+line-height: 22px;
+}
+footer .inner nav h4 {
+font-size: 16px;
+margin-bottom: 15px;
+}
+footer .inner nav ul {
+list-style: none;
+line-height: 25px;
+}
+footer .inner nav a {
+font-size: 12px;
+text-decoration: none;
+font-weight: bold;
+color:#252525;
+}
+footer .inner nav a:hover {
+opacity:0.7;
+}
+#copy {
+font-size: 11px;
+text-align: center;
+padding: 40px 0;
+background: #fff;
+}
+
+
+
+
+/********/
+
+.page #mainvisual {
+background: url(images/business.jpg);
+background-size: cover;
+background-position: center;
+text-align: center;
+height: 400px;
+}
+.page #mainvisual:before {
+    z-index: 0;130px 0 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(1,98,179,0.6);
+}
+.page #mainvisual h2 {
+font-size: 26px;
+color: #fff;
+letter-spacing: 10px;
+padding: 0;
+background: none;
+margin-top: 25vh;
+-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	z-index: 10;
+	position: relative;
+}
+.page #mainvisual h2 span {
+display: block;
+font-size: 15px;
+letter-spacing: 6px;
+font-weight: normal;
+}
+.page #content .top-msg {
+width:auto;
+padding: 50px 0;
+}
+.page #content .inner .top-msg {
+padding: 80px 0 50px;
+}
+.page #content .top-msg h2 {
+margin-bottom: 0;
+}
+.page #content .inner .top-msg h2 {
+margin-bottom: 50px;
+}
+.page .top-msg h4 {
+font-size: 20px;
+margin: 40px auto 20px;
+}
+.page .top-msg h5 {
+font-size: 18px;
+border-bottom: solid 3px #2F62B3;
+color:#2F62B3;
+padding-bottom: 10px;
+margin:0 20px 15px;
+}
+.inner .top-msg p {
+width:auto;
+padding: 0 30px;
+text-align: left;
+line-height: 35px;
+}
+.column {
+display: flex;
+padding: 0 30px;
+}
+.column div {
+padding: 20px 0;
+justify-content: space-between;
+border: solid #eee 1px;
+width: 100%;
+margin: 5px;
+}
+.page .column div p {
+font-size: 14px;
+padding: 0 20px;
+line-height: 35px;
+}
+.leftover {
+margin-left: -50px;
+}
+.rightover {
+margin-right: -50px;
+}
+.page #bnr {
+margin: 120px auto 30px;
+}
+#relation .medicine {
+	background-image: url(images/medicine.jpg);
+}
+#relation .salespromotion {
+	background-image: url(images/salespromotion.jpg);
+
+}
+#relation .publishing {
+	background-image: url(images/publishing.jpg);
+
+}
+#relation .vr {
+	background-image: url(images/vr.jpg);
+}
+.page #relation a {
+margin-right: 3px;
+}
+.page #relation a:last-child {
+margin-left: 0;
+}
